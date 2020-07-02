@@ -55,6 +55,7 @@ li {
     background-color: #FFF;
     z-index: 1;
     text-align: center;
+    display: none;
 }
 
 .navbar-brand {
@@ -100,6 +101,27 @@ li {
 	color: #0098FA;
 	border-right: 3px solid #0098FA;
 }
+
+.toggler {
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	top: 40px;
+	right: 20px;
+	background-color: #32C192;
+	color: #FFF;
+	border-radius: 50px;
+	text-align: center;
+	box-shadow: 2px 2px 3px #999;
+	cursor: pointer;
+}
+
+.toggler i {
+    position: relative;
+    top: 17.5px;
+    font-size: 25px;
+}
+
 /*** /Header/ ***/
 
 /*** Footer ***/
