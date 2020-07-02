@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+		<title>Cole D. Connelly | Develop Different</title>
+		<link rel="icon" href="/imgs/CDC-circle.png" type="image/png" sizes="16x16">
+		
 		<meta name="robots" content="index, follow">
 		<meta name="language" content="English">
 		<meta name="author" content="Cole D. Connelly">
@@ -20,7 +23,7 @@
 	</head>
 
 	<body>
-		<header class="header" id="navbar-collapse-toggle">
+		<header class="header d-none d-md-block" id="navbar-collapse-toggle" class="d-none">
 	        <div class="navbar-brand mr-0">
 	            <img src="https://avatars0.githubusercontent.com/u/30357632?s=460&v=4">
 	        </div>
@@ -106,8 +109,16 @@
 		</section>
 
 		<section id="footer">
-			<div class="container p-0">
-				
+			<div class="container py-3">
+				<div class="row align-items-center mr-0">
+					<div class="col-4 text-center text-sm-left">
+						<a class="footer-icon" href="https://www.linkedin.com/in/cole-connelly/" target="_blank"><i class="fab fa-linkedin mr-3"></i></a>
+						<a class="footer-icon" href="https://www.github.com/cdconn00" target="_blank"><i class="fab fa-github"></i></a>
+					</div>
+					<div class="col-8 text-right">
+						<span class="d-none d-sm-inline">Copyright </span>© <%= (new Date().getFullYear()) %> Cole D. Connelly
+					</div>
+				</div>
 			</div>
 		</section>
 
