@@ -40,6 +40,16 @@ $(function () {
 		    scrollTop: $('#contact').offset().top + 3
 		}, 600);
 	});
+
+	$(".toggler").on('click', function(){
+		$('#navbar-collapse-toggle').toggle("slow");
+	});
+
+	$('.nav-link').on('click', function(){
+		if ($(document).width() <= 768){
+			$('#navbar-collapse-toggle').hide("slow");
+		}
+	});
 });
 
 function checkScroll() {
