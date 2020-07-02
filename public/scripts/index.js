@@ -42,12 +42,18 @@ $(function () {
 	});
 
 	$(".toggler").on('click', function(){
-		$('#navbar-collapse-toggle').toggle("slow");
+		$('#navbar-collapse-toggle').toggle('slow');
+	});
+
+	$(".bouncer").on('click', function(){
+		$('html, body').animate({
+		    scrollTop: $('#about').offset().top
+		}, 600);
 	});
 
 	$('.nav-link').on('click', function(){
 		if ($(document).width() <= 768){
-			$('#navbar-collapse-toggle').hide("slow");
+			$('#navbar-collapse-toggle').hide('slow');
 		}
 	});
 });
@@ -59,4 +65,11 @@ function checkScroll() {
 	$("#lnkSkills").toggleClass('active', $(this).scrollTop() + 1 >= $("#skills").position().top && $(this).scrollTop() < $("#projects").position().top - 1);
 	$("#lnkProjects").toggleClass('active', $(this).scrollTop() + 1 >= $("#projects").position().top && $(this).scrollTop() < $("#contact").position().top - 1);
 	$("#lnkContact").toggleClass('active', $(this).scrollTop() + 1 >= $("#contact").position().top);
+	
+	if ($(this).scrollTop() != 0){
+		$(".bouncer").hide('fast');
+	} else {
+		$(".bouncer").show('fast');
+	}
+	
 }
