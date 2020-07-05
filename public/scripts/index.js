@@ -48,7 +48,19 @@ $(function () {
 		}, 600);
 	});
 
+	$("#btnProjects").on('click', function(){
+		$('html, body').animate({
+		    scrollTop: $('#projects').offset().top + 3
+		}, 600);
+	});
+
 	$("#lnkContact").on('click', function(){
+		$('html, body').animate({
+		    scrollTop: $('#contact').offset().top + 3
+		}, 600);
+	});
+
+	$("#btnContact").on('click', function(){
 		$('html, body').animate({
 		    scrollTop: $('#contact').offset().top + 3
 		}, 600);
