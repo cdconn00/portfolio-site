@@ -246,4 +246,43 @@ p {
 	white-space: pre-wrap;
 }
 
+.btn-landing {
+	border: 2px solid transparent;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+.btn-landing:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+#btnProjects {
+	background-color: #0098FA;
+	color: #fff;
+	transition: .5s all ease;
+}
+
+#btnProjects:hover {
+	background-color: #3F4756;
+	color: #fff;
+} 
+
+#btnContact {
+	border: 2px solid #0098FA;
+	color: #0098FA;
+	transition: .5s all ease;
+}
+
+#btnContact:hover {
+	background-color: #0098FA;
+	color: #fff;
+} 
+
+@media (max-width: 370px){
+	.btn-landing {
+		font-size: 11px;
+	}
+}
 /*** /Landing/ ***/
