@@ -116,7 +116,7 @@ p {
 	height: 60px;
 	top: 40px;
 	right: 20px;
-	background-color: #32C192;
+	background-color: #B3285F;
 	color: #FFF;
 	border-radius: 50px;
 	text-align: center;
@@ -137,7 +137,7 @@ p {
 	left: 50%;
 	width: 45px;
 	height: 45px;
-	background-color: #0098FA;
+	background-color: #B3285F;
 	color: #FFF;
 	border-radius: 50px;
 	text-align: center;
@@ -318,7 +318,7 @@ p {
 }
 
 .social-icon {
-	background-color: #004EB6;
+	background-color: #B3285F;
 	padding: 10px;
 	border-radius: 100%;
 	font-size: 25px;
@@ -348,3 +348,20 @@ p {
 	font-size: 2rem;
 }
 /*** /Mission and Values/ ***/
+
+/*** Skills ***/
+.skill-container {
+	width: 90%;
+	padding: 40px;
+	border-radius: 20px;
+	color: #fff;
+}
+
+.skill-container.purple-alt {
+	background-color: #B3285F;
+}
+
+.skill-icon {
+	font-size: 3rem;
+}
+/*** /Skills/ ***/
