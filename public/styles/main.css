@@ -412,3 +412,31 @@ p {
 	color: white;
 }
 /*** /Projects/ ***/
+
+/*** Contact ***/
+input[type='text'], [type='email'], select, textarea {
+	background: none;
+	border: none;
+	border-bottom: solid 2px #090a0c;
+	color: #090a0c;
+	width: 100%;
+	border-radius: 0;
+	transition: .5s all ease;
+	font-family: 'Lato', sans-serif;
+	padding: 0 5px;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	height: calc(2.25rem + 2px);
+}
+
+textarea {
+	height: inherit;
+}
+
+input[type='text']:focus, [type='email']:focus, select:focus, textarea:focus {
+	background: none;
+	outline: none;
+	box-shadow: none;
+	border-bottom: solid 2px #0098FA;
+}
+/*** /Contact/  ***/
