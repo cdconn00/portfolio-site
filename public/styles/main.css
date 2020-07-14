@@ -439,4 +439,18 @@ input[type='text']:focus, [type='email']:focus, select:focus, textarea:focus {
 	box-shadow: none;
 	border-bottom: solid 2px #0098FA;
 }
+
+.contact-container {
+	width: 80%;
+	padding: 30px;
+	color: #fff;
+	font-size: 3rem;
+	background-color: #3F4756;
+	transition: .5s all ease;
+	border-radius: 10px;
+}
+
+.contact-container:hover {
+	background-color: #0098FA;
+}
 /*** /Contact/  ***/
