@@ -453,4 +453,8 @@ input[type='text']:focus, [type='email']:focus, select:focus, textarea:focus {
 .contact-container:hover {
 	background-color: #0098FA;
 }
+
+label.error {
+	color: #ee5253;
+}
 /*** /Contact/  ***/
