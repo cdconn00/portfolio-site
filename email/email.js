@@ -20,7 +20,7 @@ mailerObj.sendContactEmail = async function (formData) {
 			BccAddresses: [],
 			ToAddresses: ['cdconn00@gmail.com'],
 		},
-		Source: 'Cole D. Connelly <cdconn00@gmail.com>',
+		Source: 'Cole D. Connelly <cole@coledc.com>',
 		Message: {
 			Body: {
 				Html: {
