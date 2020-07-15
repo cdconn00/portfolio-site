@@ -119,12 +119,27 @@ $(function () {
 					url: url,
 					data: form.serialize(),
 					success: function (data) {
-						$('#frm')[0].reset();
+						$("#frm")[0].reset();
 						$('html, body').animate({ scrollTop: 0 }, 'slow');
-						// Add Success Logic
+				
+						$('#landing')
+							.hide()
+							.append('<div class=\'alert alert-success\' role=\'alert\'>Message Sent.</div>')
+							.fadeIn(500);
+				
+						$('.alert').click(function () {
+							$(this).hide();
+						});
 					},
 					error: function () {
-						// Add Error Handling
+						$('#landing')
+							.hide()
+							.append('<div class=\'alert alert-danger\' role=\'alert\'>Whoops, we couldn\'t send your message.</div>')
+							.fadeIn(500);
+				
+						$('.alert').click(function () {
+							$(this).hide();
+						});
 					},
 				});
 
