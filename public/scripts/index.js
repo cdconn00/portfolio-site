@@ -81,6 +81,56 @@ $(function () {
 			$('#navbar-collapse-toggle').hide('slow');
 		}
 	});
+
+	$('#frm')
+		.submit(function (e) {
+			e.preventDefault();
+		})
+		.validate({
+			rules: {
+				txtEmail: { required: true, email: true, maxlength: 100 },
+				txtName: { required: true, maxlength: 100 },
+				ddlSubject: { required: true },
+				txtComments: { required: true, maxlength: 2000 },
+			},
+			messages: {
+				txtEmail: {
+					required: 'Please enter your email address.',
+				},
+				txtName: {
+					required: 'Please enter your name.',
+				},
+				ddlSubject: {
+					required: 'Please select a subject.',
+				},
+				txtComments: {
+					required: 'Please enter your questions / comments / concerns.',
+				},
+			},
+			errorPlacement: function (error, element) {
+				error.appendTo(element.closest('.form-group'));
+			},
+			submitHandler: function () {
+				var form = $('#frm');
+				var url = form.attr('action');
+
+				$.ajax({
+					type: 'POST',
+					url: url,
+					data: form.serialize(),
+					success: function (data) {
+						$('#frm')[0].reset();
+						$('html, body').animate({ scrollTop: 0 }, 'slow');
+						// Add Success Logic
+					},
+					error: function () {
+						// Add Error Handling
+					},
+				});
+
+				return false;
+			},
+		});
 });
 
 function checkScroll() {
