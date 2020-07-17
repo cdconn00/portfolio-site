@@ -9,7 +9,7 @@ $(function () {
 		splitLetters(words[i]);
 	}
 
-	setTimeout(changeWord, 1000);
+	setTimeout(changeWord, 1500);
 	setInterval(changeWord, 3000);
 
 	checkScroll();
@@ -23,7 +23,7 @@ $(function () {
 			{
 				scrollTop: $('#landing').offset().top,
 			},
-			600
+			1500
 		);
 	});
 
@@ -32,7 +32,7 @@ $(function () {
 			{
 				scrollTop: $('#about').offset().top,
 			},
-			600
+			1500
 		);
 	});
 
@@ -41,7 +41,7 @@ $(function () {
 			{
 				scrollTop: $('#mission').offset().top,
 			},
-			600
+			1500
 		);
 	});
 
@@ -50,7 +50,7 @@ $(function () {
 			{
 				scrollTop: $('#skills').offset().top,
 			},
-			600
+			1500
 		);
 	});
 
@@ -59,7 +59,7 @@ $(function () {
 			{
 				scrollTop: $('#projects').offset().top + 3,
 			},
-			600
+			1500
 		);
 	});
 
@@ -68,7 +68,7 @@ $(function () {
 			{
 				scrollTop: $('#projects').offset().top + 3,
 			},
-			600
+			1500
 		);
 	});
 
@@ -77,7 +77,7 @@ $(function () {
 			{
 				scrollTop: $('#contact').offset().top + 3,
 			},
-			600
+			1500
 		);
 	});
 
@@ -86,7 +86,7 @@ $(function () {
 			{
 				scrollTop: $('#contact').offset().top + 3,
 			},
-			600
+			1500
 		);
 	});
 
@@ -99,7 +99,7 @@ $(function () {
 			{
 				scrollTop: $('#about').offset().top,
 			},
-			600
+			1500
 		);
 	});
 
