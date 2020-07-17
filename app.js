@@ -6,15 +6,15 @@ const path = require('path');
 const email = require('./email/email');
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.set("view engine", "ejs");
-app.use(express.static(__dirname + "/public"));
+app.set('view engine', 'ejs');
+app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
 	res.render('index');
 });
 
 app.post('/', async (req, res) => {
-	let emailStatus = await email.sendContactEmail(req.body);
+	const emailStatus = await email.sendContactEmail(req.body);
 
 	if (emailStatus == 'Success') {
 		res
