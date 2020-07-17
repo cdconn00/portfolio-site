@@ -215,6 +215,20 @@ p {
 	z-index: 1;
 }
 
+@media (max-height: 492px) {
+	.header {
+		display: none !important;
+	}
+
+	.container {
+		padding-left: 15px;
+	}
+
+	#toggler {
+		display: none !important;
+	}
+}
+
 /*** /Header/ ***/
 
 /*** Footer ***/
