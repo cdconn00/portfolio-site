@@ -5,8 +5,6 @@ aws.config.accessKeyId = process.env.accessKeyId;
 aws.config.secretAccessKey = process.env.secretAccessKey;
 aws.config.region = process.env.region;
 
-var ses = new aws.SES();
-
 mailerObj.sendContactEmail = async function (formData) {
 	var content = '<p><b>Name:</b> ' + formData.txtName + '</p>';
 	content += '<p><b>Email:</b> ' + formData.txtEmail + '</p>';
@@ -24,18 +22,18 @@ mailerObj.sendContactEmail = async function (formData) {
 		Message: {
 			Body: {
 				Html: {
-					Charset: 'UTF-8', 
-					Data: content
-				}, 
+					Charset: 'UTF-8',
+					Data: content,
+				},
 				Text: {
-					Charset: 'UTF-8', 
-					Data: content
-				}
+					Charset: 'UTF-8',
+					Data: content,
+				},
 			},
 			Subject: {
-				Charset: 'UTF-8', 
-				Data: 'Portfolio Site Contact Request'
-			}
+				Charset: 'UTF-8',
+				Data: 'Portfolio Site Contact Request',
+			},
 		},
 		ReplyToAddresses: [formData.txtEmail],
 	};
