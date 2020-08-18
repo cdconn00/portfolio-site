@@ -14,12 +14,16 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', async (req, res) => {
-	const emailStatus = await email.sendContactEmail(req.body);
+	if (req.body.txtEmail != null) {
+		const emailStatus = await email.sendContactEmail(req.body);
 
-	if (emailStatus == 'Success') {
-		res
-			.status(200)
-			.send('Success! Our best owl is on the way with your message.');
+		if (emailStatus == 'Success') {
+			res
+				.status(200)
+				.send('Success! Our best owl is on the way with your message.');
+		} else {
+			res.status(400).send();
+		}
 	} else {
 		res.status(400).send();
 	}
