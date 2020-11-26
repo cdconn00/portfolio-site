@@ -77,8 +77,20 @@ p {
 
 .header-underline {
 	width: 40%;
-	border-top: 5px solid #0098fa;
+	border-top: 5px solid #005f9e;
 	margin-left: 0;
+}
+
+.font-1 {
+	font-size: 1rem;
+}
+
+.font-125 {
+	font-size: 1.25rem;
+}
+
+.font-15 {
+	font-size: 1.5rem;
 }
 
 /*** /Global/ ***/
@@ -99,7 +111,7 @@ p {
 }
 
 .navbar-brand {
-	background-color: #0098fa;
+	background-color: #005f9e;
 	width: 100%;
 	padding: 15px 0;
 }
@@ -128,7 +140,7 @@ p {
 }
 
 .nav-link:hover {
-	color: #0098fa;
+	color: #005f9e;
 }
 
 .nav-link i {
@@ -138,8 +150,8 @@ p {
 }
 
 .active {
-	color: #0098fa;
-	border-right: 3px solid #0098fa;
+	color: #005f9e;
+	border-right: 4px solid #005f9e;
 }
 
 .toggler {
@@ -331,7 +343,7 @@ p {
 }
 
 .btn-normal {
-	background-color: #0098fa;
+	background-color: #005f9e;
 	color: #fff;
 	text-decoration: none;
 	transition: 0.5s all ease;
@@ -344,13 +356,13 @@ p {
 }
 
 .btn-alt {
-	border: 2px solid #0098fa;
-	color: #0098fa;
+	border: 2px solid #005f9e;
+	color: #005f9e;
 	transition: 0.5s all ease;
 }
 
 .btn-alt:hover {
-	background-color: #0098fa;
+	background-color: #005f9e;
 	color: #fff;
 }
 
@@ -394,6 +406,10 @@ p {
 	background-color: #3f4756;
 	color: #fff;
 }
+
+.awd-link {
+	color: #005f9e;
+}
 /*** /About Me/ ***/
 
 /*** Mission and Values ***/
@@ -405,7 +421,7 @@ p {
 }
 
 .value-icon {
-	color: #0098fa;
+	color: #005f9e;
 	font-size: 2rem;
 }
 /*** /Mission and Values/ ***/
@@ -504,7 +520,7 @@ textarea:focus {
 	background: none;
 	outline: none;
 	box-shadow: none;
-	border-bottom: solid 2px #0098fa;
+	border-bottom: solid 2px #005f9e;
 }
 
 .contact-container {
@@ -518,7 +534,7 @@ textarea:focus {
 }
 
 .contact-container:hover {
-	background-color: #0098fa;
+	background-color: #005f9e;
 }
 
 label.error {
