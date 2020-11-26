@@ -30,7 +30,7 @@ app.post('/', async (req, res) => {
 });
 
 app.get('/resume', (req, res) => {
-	res.sendFile(path.join(__dirname, '/public/files/Connelly-Cole-Resume.pdf'));
+	res.sendFile(path.join(__dirname, '/public/files/Cole_Connelly_Resume.pdf'));
 });
 
 app.get('/sitemap.xml', (req, res) => {
