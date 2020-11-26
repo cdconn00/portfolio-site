@@ -81,6 +81,18 @@ p {
 	margin-left: 0;
 }
 
+.font-1 {
+	font-size: 1rem;
+}
+
+.font-125 {
+	font-size: 1.25rem;
+}
+
+.font-15 {
+	font-size: 1.5rem;
+}
+
 /*** /Global/ ***/
 
 /*** Header ***/
