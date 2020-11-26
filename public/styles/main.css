@@ -77,7 +77,7 @@ p {
 
 .header-underline {
 	width: 40%;
-	border-top: 5px solid #16697a;
+	border-top: 5px solid #005f9e;
 	margin-left: 0;
 }
 
@@ -111,7 +111,7 @@ p {
 }
 
 .navbar-brand {
-	background-color: #16697a;
+	background-color: #005f9e;
 	width: 100%;
 	padding: 15px 0;
 }
@@ -140,7 +140,7 @@ p {
 }
 
 .nav-link:hover {
-	color: #16697a;
+	color: #005f9e;
 }
 
 .nav-link i {
@@ -150,8 +150,8 @@ p {
 }
 
 .active {
-	color: #16697a;
-	border-right: 5px solid #16697a;
+	color: #005f9e;
+	border-right: 4px solid #005f9e;
 }
 
 .toggler {
@@ -160,7 +160,7 @@ p {
 	height: 60px;
 	top: 40px;
 	right: 20px;
-	background-color: #7a1640;
+	background-color: #b3285f;
 	color: #fff;
 	border-radius: 50px;
 	text-align: center;
@@ -181,7 +181,7 @@ p {
 	left: 50%;
 	width: 45px;
 	height: 45px;
-	background-color: #7a1640;
+	background-color: #b3285f;
 	color: #fff;
 	border-radius: 50px;
 	text-align: center;
@@ -343,7 +343,7 @@ p {
 }
 
 .btn-normal {
-	background-color: #16697a;
+	background-color: #005f9e;
 	color: #fff;
 	text-decoration: none;
 	transition: 0.5s all ease;
@@ -356,13 +356,13 @@ p {
 }
 
 .btn-alt {
-	border: 2px solid #16697a;
-	color: #16697a;
+	border: 2px solid #005f9e;
+	color: #005f9e;
 	transition: 0.5s all ease;
 }
 
 .btn-alt:hover {
-	background-color: #16697a;
+	background-color: #005f9e;
 	color: #fff;
 }
 
@@ -391,7 +391,7 @@ p {
 }
 
 .social-icon {
-	background-color: #7a1640;
+	background-color: #b3285f;
 	padding: 10px;
 	border-radius: 100%;
 	font-size: 25px;
@@ -408,7 +408,7 @@ p {
 }
 
 .awd-link {
-	color: #16697a;
+	color: #005f9e;
 }
 /*** /About Me/ ***/
 
@@ -421,7 +421,7 @@ p {
 }
 
 .value-icon {
-	color: #16697a;
+	color: #005f9e;
 	font-size: 2rem;
 }
 /*** /Mission and Values/ ***/
@@ -435,7 +435,7 @@ p {
 }
 
 .skill-container.purple-alt {
-	background-color: #7a1640;
+	background-color: #b3285f;
 }
 
 .skill-icon {
@@ -520,7 +520,7 @@ textarea:focus {
 	background: none;
 	outline: none;
 	box-shadow: none;
-	border-bottom: solid 2px #16697a;
+	border-bottom: solid 2px #005f9e;
 }
 
 .contact-container {
@@ -534,7 +534,7 @@ textarea:focus {
 }
 
 .contact-container:hover {
-	background-color: #16697a;
+	background-color: #005f9e;
 }
 
 label.error {
