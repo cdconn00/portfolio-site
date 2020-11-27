@@ -114,11 +114,13 @@ $(function () {
 			e.preventDefault();
 		})
 		.validate({
+			ignore: ':hidden:not(#hdnRecaptcha)',
 			rules: {
 				txtEmail: { required: true, email: true, maxlength: 100 },
 				txtName: { required: true, maxlength: 100 },
 				ddlSubject: { required: true },
 				txtComments: { required: true, maxlength: 2000 },
+				hdnRecaptcha: { required: true },
 			},
 			messages: {
 				txtEmail: {
@@ -132,6 +134,9 @@ $(function () {
 				},
 				txtComments: {
 					required: 'Please enter your questions / comments / concerns.',
+				},
+				hdnRecaptcha: {
+					required: 'Please complete the CAPTCHA.',
 				},
 			},
 			errorPlacement: function (error, element) {
@@ -155,6 +160,8 @@ $(function () {
 								"<div class='alert alert-success' role='alert'>Message Sent.</div>"
 							)
 							.fadeIn(500);
+
+						$('#hdnRecaptcha').val('');
 
 						$('.alert').click(function () {
 							$(this).hide();
@@ -261,4 +268,15 @@ function splitLetters(word) {
 	}
 
 	wordArray.push(letters);
+}
+
+function captchaCallback() {
+	grecaptcha.render('captcha', {
+		sitekey: '6Lfsu-8ZAAAAACPMj_jK3Ddpvo1NGLanaiRL2ki_',
+		callback: setCaptcha,
+	});
+}
+
+function setCaptcha(response) {
+	$('#hdnRecaptcha').val(response);
 }
