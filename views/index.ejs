@@ -527,7 +527,7 @@
 								</select>
 							</div>
 
-							<div class="form-group">
+							<div class="form-group mb-4">
 								<textarea
 									name="txtComments"
 									id="txtComments"
@@ -538,10 +538,30 @@
 								></textarea>
 							</div>
 
-							<div class="form-group text-right">
-								<button class="btn-landing btn-normal" type="submit">
-									Send
-								</button>
+							<div class="form-group">
+								<div class="row align-items-center">
+									<div class="col-12 col-sm-8">
+										<div>
+											<div
+												id="captcha"
+												class="g-recaptcha"
+												data-sitekey="6Lfsu-8ZAAAAACPMj_jK3Ddpvo1NGLanaiRL2ki_"
+											></div>
+											<input
+												type="hidden"
+												class="required"
+												name="hdnRecaptcha"
+												id="hdnRecaptcha"
+											/>
+										</div>
+									</div>
+
+									<div class="col-12 col-sm-4 text-right mt-3 mt-sm-0">
+										<button class="btn-landing btn-normal" type="submit">
+											Send
+										</button>
+									</div>
+								</div>
 							</div>
 						</form>
 					</div>
@@ -602,6 +622,11 @@
 			</div>
 		</section>
 
+		<script
+			src="https://www.google.com/recaptcha/api.js?onload=captchaCallback&render=explicit"
+			async
+			defer
+		></script>
 		<script src="/scripts/index.js"></script>
 	</body>
 </html>
