@@ -366,6 +366,17 @@ p {
 	color: #fff;
 }
 
+.hiring-link {
+	font-weight: bold;
+	display: block;
+	color: red;
+	text-decoration: none !important;
+}
+
+.hiring-link:hover {
+	color: #005f9e;
+}
+
 @media (max-width: 370px) {
 	.btn-landing {
 		font-size: 11px;
